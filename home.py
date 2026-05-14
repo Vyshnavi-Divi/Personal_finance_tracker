@@ -2,10 +2,8 @@ from datetime import *
 
 
 class FinanceTracker:
-    _transactions = []
-
     def __init__(self):
-        self.transactions = FinanceTracker._transactions
+        self.transactions = []
 
     def add_income(self, source, amount, date, description=""):
         if amount <= 0:
